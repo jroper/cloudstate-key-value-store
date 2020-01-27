@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package cloudstate;
+
+import "google/protobuf/any.proto";
+
+option java_package = "io.cloudstate.keyvaluestore";
+option java_outer_classname = "KeyValueStoreModel";
+
+message State {
+    google.protobuf.Any value = 1;
+    string etag = 2;
+}
