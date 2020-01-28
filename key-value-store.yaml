@@ -1,0 +1,8 @@
+# Stateful service descriptor for the presence app
+apiVersion: cloudstate.io/v1alpha1
+kind: StatefulService
+metadata:
+  name: key-value-store
+spec:
+  containers:
+  - image: cloudstateio/cloudstate-key-value-store:latest
